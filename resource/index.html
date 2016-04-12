@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wikipedia Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu|Source+Serif+Pro:600' rel='stylesheet' type='text/css'>
+    <link style="text/css" rel="stylesheet" href="css/style.css">
+    <link style="text/css" rel="stylesheet" href="css/queries.css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="created-by">
+                    Created by <a href="#" target="_blank">Andrew Charlebois</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <h1>
+                Wikipedia Viewer
+            </h1>
+        </div>
+    </header>
+    
+    
+    <section class="search">
+        <div class="container">
+            <form id="formSearch">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="searchBar input-group">
+                        <input id="wikiSearchField" type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button type="submit" class="wikiSearchBtn btn btn-success" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- random wiki link -->
+        <div class="randomWikiPage text-center">
+            <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Click For Random Goodness!</a>
+        </div>
+    </section>
+    
+    
+    <!--  main search content to append to this section  -->
+    <section class="main-content">
+        <div class="col-md-8 col-md-offset-2">
+            <div id="wikiSearchResult" class="container"></div>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
